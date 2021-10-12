@@ -81,9 +81,8 @@ public class Relogio {
         this.segundos = segundos;
     }
 
-    @Override
     public String toString() {
-        return "Relogio: " + hora + " Horas " + minutos + " Minutos " + segundos + " Segundos";
+        return String.format("%d:%02d:%02d", getHora(), getMinutos(), getSegundos());
     }
 
 }
