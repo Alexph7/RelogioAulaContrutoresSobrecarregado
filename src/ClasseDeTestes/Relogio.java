@@ -10,22 +10,22 @@ public class Relogio {
         this(0, 0, 0);
     }
 
-    public Relogio(int hora, int minutos) {
-        this(hora, minutos, 0);
-    }
-
-    public Relogio(Relogio r) {
-        this(r.getHora(), r.getMinutos(), r.getSegundos());
-    }
-
     public Relogio(int hora) {
         this(hora, 0, 0);
+    }
+
+    public Relogio(int hora, int minutos) {
+        this(hora, minutos, 0);
     }
 
     public Relogio(int hora, int minutos, int segundos) {
         this.hora = hora;
         this.minutos = minutos;
         this.segundos = segundos;
+    }
+
+    public Relogio(Relogio r) {
+        this(r.getHora(), r.getMinutos(), r.getSegundos());
     }
 
     public int getHora() {
