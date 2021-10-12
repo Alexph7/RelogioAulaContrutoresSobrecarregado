@@ -85,4 +85,7 @@ public class Relogio {
         return String.format("%d:%02d:%02d", getHora(), getMinutos(), getSegundos());
     }
 
+    public String horaUniversal() {
+        return;
+    }
 }
