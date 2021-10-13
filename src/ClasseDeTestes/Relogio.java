@@ -45,6 +45,20 @@ public class Relogio {
         this(r.getHora(), r.getMinutos(), r.getSegundos()); // Invoca o Construtor Com 3 Argumentos
     }
 
+    public void setHorario(int hora, int minutos, int segundos) {
+        if (hora < 0 || hora >= 24) {
+            throw new IllegalArgumentException("Hora Deve Ser Entre 0 - 23");
+        }
+        if (minutos < 0 || minutos >= 60) {
+            throw new IllegalArgumentException("Minutos Deve Ser Entre 0 - 59");
+        }
+        if (segundos < 0 || segundos >= 60) {
+            throw new IllegalArgumentException("Segundos Deve Ser Entre 0 - 59");
+        }
+        this.hora = hora;
+        this.minutos = minutos;
+        this.segundos = segundos;
+    }
     public int getHora() {
         return hora;
     }
