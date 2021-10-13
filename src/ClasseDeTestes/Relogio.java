@@ -86,6 +86,7 @@ public class Relogio {
     }
 
     public String horaUniversal() {
-        return;
+        return String.format("%d:%02d:%02d %s", ((getHora() == 0 || getHora() == 12) ? 12 : getHora() % 12),
+                getMinutos(), getSegundos(), (getHora() < 12 ? "AM" : "PM"));
     }
 }
